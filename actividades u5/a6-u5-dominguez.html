@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="carga">...</p>
+    <p id="bienvenida">...</p>
+    <script>
+    let carga = document.querySelector("#carga"),
+        bienvenida = document.querySelector("#bienvenida")
+
+    window.addEventListener('load', (e) => {
+            carga.innerText = "Página cargada correctamente."
+            bienvenida.innerText = "Bienvenido"
+})
+    </script>
+</body>
+</html>
