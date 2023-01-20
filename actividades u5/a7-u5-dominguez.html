@@ -7,8 +7,10 @@
     <title>Document</title>
 </head>
 <body>
+    <img id="imagen" src="user1.jpg" alt="Has detenido la carga">
     <script>
-        document.oncontextmenu = new Function( "return false" );
+         window.addEventListener('load', (e) => {
+            document.querySelector("#imagen").alt = "La imagen no ha cargado"})
     </script>
 </body>
 </html>

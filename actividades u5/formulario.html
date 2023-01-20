@@ -1,0 +1,82 @@
+<form action="html5-formularios.html" method="get" autocomplete>
+    <h3>Text</h3>
+    <label>Nombre: <input name="nombre" type="text" value="" readonly disabled size="40" maxlength="10" pattern="[A-Za-z]{3}"
+       placeholder="Nombre"></label>
+    <h3>Radio</h3>
+    <input type="radio" name="gender" value="male" checked> Masculino
+    <br>
+    <input type="radio" name="gender" value="female"> Femenino
+    <br>
+    <input type="radio" name="gender" value="other"> Otros
+    <h3>Select</h3>
+    <label for="cars">Coches:</label>
+    <select name="cars" id="cars">
+       <option value="volvo">Volvo</option>
+       <option value="saab">Saab</option>
+       <option value="fiat">Fiat</option>
+       <option value="audi">Audi</option>
+    </select>
+    <h3>Textarea</h3>
+    <textarea name="message" rows="10" cols="30">
+       El gato estaba jugando en el jardín.
+    </textarea>
+    <h3>Datalist</h3>
+    <label for="browsers">Buscador:</label>
+    <input list="browsers2" id="browser2">
+    <datalist id="browsers2" name="browsers2">
+       <option value="Internet Explorer">
+       <option value="Firefox">
+       <option value="Chrome">
+       <option value="Opera">
+       <option value="Safari">
+    </datalist>
+    <input list="list" id="input">
+    <datalist id="list">
+       <option value="Internet Explorer" >Navegador Antiguo</option>
+       <option value="Firefox" >Firefox</option>
+       <option value="Chrome" >Chrome</option>
+       <option value="Opera" >Opera</option>
+       <option value="Safari" >Safari</option>
+       </datalist>
+    <input list="browsers" name="browser" id="browser">
+    <datalist id="browsers">
+      <option value="Edge">
+      <option value="Firefox">
+      <option value="Chrome">
+      <option value="Opera">
+      <option value="Safari">
+   </datalist>
+   <input type="submit">
+ </form>
+    <h3>Password</h3>
+    <label>Contraseña: <input type="password" name="psw" id="psw" required></label>
+    <h3>Checkbox</h3>
+    <input type="checkbox" name="vehicle1" value="Bike"> Tengo una bicicleta<br>
+    <input type="checkbox" name="vehicle2" value="Car"> Tento un coche
+    <h3>Color</h3>
+    <label>Color: <input type="color" name="favcolor"></label>
+    <h3>Fecha</h3>
+    <label>Fecha: <input type="date" name="bday" min="2000-01-02"></label>
+    <h3>Datetime</h3>
+    <label>Fecha y hora: <input type="datetime-local" name="bdaytime"></label>
+    <h3>Email</h3>
+    <label>Email: <input type="email" name="email" autocomplete="off"></label>
+    <h3>Number</h3>
+    <label>Número: <input type="number" name="quantity" min="1" max="25" step="3"></label>
+    <h3>Points</h3>
+    <label>Número desde y hasta: <input type="number" name="points" min="0" max="100" step="10" value="30"></label>
+    <h3>Range</h3>
+    <label>rango: <input type="range" name="points" min="0" max="10"></label>
+    <h3>Search</h3>
+    <label>Búsqueda: <input type="search" name="googlesearch"></label>
+    <h3>Time</h3>
+    <label>Hora: <input type="time" name="usr_time"></label>
+    <h3>Url</h3>
+    <label>Url: <input type="url" name="homepage"></label>
+    <h3>Week</h3>
+    <label>Semana año: <input type="week" name="week_year"></label>
+    <h3>File</h3>
+    <label>Ficheros: <input type="file" name="img" multiple></label>
+    <br><br>
+    <input type="submit" value="Submit">
+ </form>
