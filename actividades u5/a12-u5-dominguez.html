@@ -11,7 +11,7 @@
     <div>
         <label for="">
             DNI:
-            <input type="text" required>
+            <input type="text" id="dni" required>
             <p id="err-dni"></p>
             <p>(Formato válido: 99.999.999-X)</p>
         </label>
@@ -19,7 +19,7 @@
     <div>
         <label for="">
             Nombre:
-            <input type="text" required>
+            <input type="text" id="nombre" required>
             <p id="err-nombre"></p>
             <p>(Introduzca al menos un nombre y un apellido. Max: 2 nombres y 2 apellidos)</p>
         </label>
@@ -27,7 +27,7 @@
     <div>
         <label for="">
             F. Nac.:
-            <input type="text" required>
+            <input type="text" id="fnac" required>
             <p id="err-fnac"></p>
             <p>(Formato válido: dd/mm/yyyy)</p>
         </label>
@@ -35,7 +35,7 @@
     <div>
         <label for="">
             E-mail:
-            <input type="text" required>
+            <input type="text" id="correo" required>
             <p id="err-correo"></p>
             <p>(xxx@yyy.zzz)</p>
         </label>
@@ -43,7 +43,7 @@
     <div>
         <label for="">
             Pág. Web:
-            <input type="text" required>
+            <input type="text" id="web" required>
             <p id="err-web"></p>
             <p>(Formato válido: http://www.xxx.yyy)</p>
         </label>
@@ -51,7 +51,7 @@
     <div>
         <label for="">
             Contraseña:
-            <input type="password" required>
+            <input type="password" id="psswd" required>
             <p id="err-psswd"></p>
             <p>(Debe contener entre 8 y 10 caracteres)</p>
         </label>
@@ -59,12 +59,12 @@
     <div>
         <label for="">
             Confirmar contraseña:
-            <input type="password" required>
+            <input type="password" id="psswd2" required>
             <p id="err-psswd2"></p>
             <p>(Debe contener entre 8 y 10 caracteres)</p>
         </label>
     </div>
-    <input type="submit" value="GUARDAR">
+    <button id="btn-guardar">GUARDAR</button>
     <button id="btn-ver">VER</button>
     </form>
     <script src="a12-u5-dominguez.js"></script>
