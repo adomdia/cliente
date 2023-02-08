@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 10</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <style>
+                main{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            border: 2px solid teal;
+            margin: auto;
+            width: fit-content;
+        }
+        p:nth-child(1){
+            justify-self: center;
+            grid-column: 1/4;
+        }
+        .cont{
+            grid-column: 1/1;
+       }
+       .sep{
+           grid-column: 1/4;
+        }
+       button{
+           grid-column: 1/3;
+           left: 1em;
+           border-radius: 5px;
+           border-style: none;
+           background-color: teal;
+           color: white;
+           height: 2em;
+           width: 10em;
+           justify-self: center;
+        }
+       .barras{
+           grid-column: 1/5;
+           display: grid;
+           grid-template-columns: 100%;
+        }
+        .barras div{
+            grid-column: 1/5;
+        }
+        progress{
+        transition: 1s;
+        height: 25px;
+
+       }
+    </style>
+</head>
+<body>
+    <form id="votos">
+        <input type="hidden" name="votos" id="votos">
+        <input type="email" name="email" id="email" value="Rafael.Figueroa@iesdonana.org" hidden>
+    </form>
+        <main>
+            <p>¿Qué tipo de café te gusta más?</p>
+        <div class="space"></div>
+        <div class="cont">
+            <input type="radio" name="caf" id="sol" value="1">
+            <label for="sol">Café Solo</label>
+        </div>
+        <div class="cont">
+            <input type="radio" name="caf" id="milk" value="2">
+            <label for="milk">Café con leche</label>
+        </div>
+        <div class="cont">
+            <input type="radio" name="caf" id="desc" value="3">
+            <label for="desc">Café descafeinado</label>
+        </div>
+        <div class="cont">
+            <input type="radio" name="caf" id="hielo" value="4">
+            <label for="hielo">Café solo con hielo</label>
+        </div>
+        <div class="sep"></div>
+        <div class="sep"><br></div>
+        <button id="votar">Votar!</button>
+        <div class="sep"><br></div>
+        <div class="barras">
+            <div class="sep"><br></div>
+            <div>
+                <progress id="b_sol" max="100" value="0"></progress>&nbsp; Café Solo <span id="p_sol">0.00</span>% <br>
+            </div>
+            <div>
+                <progress id="b_milk" max="100" value="0"></progress>&nbsp; Café con Leche <span id="p_milk">0.00</span>%<br>
+            </div>
+            <div>
+                <progress id="b_desc" max="100" value="0"></progress>&nbsp; Café descafeinado <span id="p_desc">0.00</span>%<br>
+            </div>
+            <div>
+                <progress id="b_hielo" max="100" value="0"></progress>&nbsp; Café solo con hielo <span id="p_hielo">0.00</span>%<br>
+            </div>
+            <br>
+
+        </div>
+        <button id="enviar">Enviar</button>
+    </main>
+    <script src="10.js"></script>
+</body>
+</html>
